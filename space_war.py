@@ -55,7 +55,7 @@ BULLET_RADIUS = 10
 #----------------------code for working on terminal----------
 final_path = os.getcwd()
 path_list = final_path.split("\\")
-if path_list[-1] == "Space_war_Multiplayer" or  path_list[-1] == "Space_war_Multiplayer_game-master":
+if path_list[-1] == "Space_war_Multiplayer" or  path_list[-1] == "Space_War_Multiplayer_game-master":
     final_path = final_path + "\\Assets\\"
 #----------------------code for working on terminal----------
 
@@ -63,7 +63,6 @@ if path_list[-1] == "Space_war_Multiplayer" or  path_list[-1] == "Space_war_Mult
 else:
     final_path = os.path.dirname(__file__) + "\\" + "Assets" + "\\"
 #----------------------code for working on vs code----------
-print(final_path,1)
 
 
 
