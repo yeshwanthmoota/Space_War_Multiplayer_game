@@ -52,16 +52,17 @@ BULLET_RADIUS = 10
 
 ##
 
+#----------------------code for working on terminal----------
+final_path = os.getcwd()
+path_list = final_path.split("\\")
+final_path = final_path + "\\Assets\\"
+#----------------------code for working on terminal----------
 
-file_path = os.getcwd() # Code for working on terminal
-path_list = file_path.split("\\") # Code for working on terminal
 
-if path_list[-1] != "Space_war_Multiplayer": # Code for working in vs code 
-    file_path = os.path.dirname(__file__) # Code for working in vs code
-    path_list = file_path.split("\\") # Code for working in vs code
-
-final_path = "\\".join(path_list[0:-3])
-final_path= final_path+ "\\" + r"pygame_projects\Games\Space_war_Multiplayer\Assets" + "\\"
+#----------------------code for working on vs code----------
+if path_list[-1] != "Space_war_Multiplayer":
+    final_path = os.path.dirname(__file__) + "\\" + "Assets" + "\\"
+#----------------------code for working on vs code----------
 
 
 
