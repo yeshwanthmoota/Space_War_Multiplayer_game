@@ -2,6 +2,7 @@ import pygame,sys
 import os
 import math
 
+os.environ['SDL_VIDEO_CENTERED'] = '1'
 
 pygame.init()
 pygame.font.init()
