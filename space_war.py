@@ -55,14 +55,14 @@ BULLET_RADIUS = 10
 
 #----------------------code for working on terminal----------
 final_path = os.getcwd()
-path_list = final_path.split("\\")
+path_list = final_path.split("/")
 if path_list[-1] == "Space_war_Multiplayer" or  path_list[-1] == "Space_War_Multiplayer_game-master":
-    final_path = final_path + "\\Assets\\"
+    final_path = final_path + "/Assets/"
 #----------------------code for working on terminal----------
 
 #----------------------code for working on vs code----------
 else:
-    final_path = os.path.dirname(__file__) + "\\" + "Assets" + "\\"
+    final_path = os.path.dirname(__file__) + "/" + "Assets" + "/"
 #----------------------code for working on vs code----------
 
 
@@ -440,15 +440,15 @@ if __name__=="__main__":
 
 
 # file_path = os.getcwd() # Code for working on terminal
-# path_list = file_path.split("\\") # Code for working on terminal
+# path_list = file_path.split("/") # Code for working on terminal
 
 # if path_list[-1] != "Space_war_Multiplayer": # Code for working in vs code 
 #     file_path = os.path.dirname(__file__) # Code for working in vs code
-#     path_list = file_path.split("\\") # Code for working in vs code
+#     path_list = file_path.split("/") # Code for working in vs code
 
-# final_path = "\\".join(path_list[0:-3])
+# final_path = "/".join(path_list[0:-3])
 # # print(final_path)
-# final_path= final_path+ "\\" + r"pygame_projects\Assets\Assets_for_Space_war_Multiplayer" + "\\"
+# final_path= final_path+ "/" + r"pygame_projects\Assets\Assets_for_Space_war_Multiplayer" + "/"
 # print(final_path)
 
 
